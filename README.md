@@ -1,11 +1,21 @@
-![Video Thumbnail](https://img.youtube.com/vi/EzzcEL_1o9o/maxresdefault.jpg)
-
-[Video tutorial](https://youtu.be/EzzcEL_1o9o)
-
-The backend is [here](https://github.com/wass08/r3f-virtual-girlfriend-backend).
+The backend is [here](https://github.com/ForbiddenForge/ai-girlfriend-backend).
 
 Start the development server with
+
+### NPM:
+
+```
+npm install
+npx tailwindcss init -p
+npm run dev
+```
+
+OR
+
+### Yarn:
+
 ```
 yarn
+npx tailwindcss init -p
 yarn dev
 ```
