@@ -43,6 +43,7 @@ export const ChatProvider = ({ children }) => {
         loading,
         cameraZoomed,
         setCameraZoomed,
+        messages
       }}
     >
       {children}

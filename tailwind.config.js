@@ -22,6 +22,14 @@ export default {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 			},
+			animation: {
+				gradient: 'gradient 8s linear infinite',
+			},
+			keyframes: {
+				gradient: {
+					to: { 'background-position': '200% center' },
+				},
+			},
 		},
 	},
 	plugins: [require('preline/plugin')],

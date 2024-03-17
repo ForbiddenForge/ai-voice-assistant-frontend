@@ -1,9 +1,9 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useChat } from "../hooks/useChat";
 
 export const UI = ({ hidden, ...props }) => {
   const input = useRef();
-  const { chat, loading, cameraZoomed, setCameraZoomed, message } = useChat();
+  const { chat, loading, cameraZoomed, setCameraZoomed, message, messages } = useChat();
 
   const sendMessage = () => {
     const text = input.current.value;
@@ -16,12 +16,22 @@ export const UI = ({ hidden, ...props }) => {
     return null;
   }
 
+  const messageCopy = message?.text
+
+
+
+
+
   return (
     <>
       <div className="fixed top-0 left-0 right-0 bottom-0 z-10 flex justify-between p-4 flex-col pointer-events-none">
         <div className="self-start backdrop-blur-md bg-white bg-opacity-50 p-4 rounded-lg">
-          <h1 className="font-black text-xl">My Virtual GF</h1>
-          <p>I will always love you ❤️</p>
+          <h1 className="font-black text-xl">AI mind 2.0</h1>
+          <p>I'll always be smarter than you ❤️</p>
+        </div>
+        <div className="self-start backdrop-blur-md bg-white bg-opacity-50 p-4 rounded-lg mt-5">
+          <h1 className="text-6xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.purple.400),theme(colors.purple.100),theme(colors.pink.300),theme(colors.orange.400),theme(colors.pink.300),theme(colors.purple.100),theme(colors.purple.400))] bg-[length:200%_auto] animate-gradient ">Response:</h1>
+          <p className="max-w-96 font-extrabold">{messageCopy}</p>
         </div>
         <div className="w-full flex flex-col items-end justify-center gap-4">
           <button
