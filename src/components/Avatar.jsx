@@ -137,7 +137,7 @@ export function Avatar(props) {
   }, [message]);
 
   // Male Model
-  const { animations } = useGLTF("/models/p_animations.glb");
+  const { animations } = useGLTF("/models/animationsMale.glb");
 
   // FEMALE Model
   // const { animations } = useGLTF("/models/animations.glb");
