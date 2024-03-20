@@ -140,7 +140,7 @@ export function Avatar(props) {
   const { animations } = useGLTF("/models/animationsMale.glb");
 
   // FEMALE Model
-  // const { animations } = useGLTF("/models/animations.glb");
+  // const { animations } = useGLTF("/models/animationsFemale.glb");
 
   const group = useRef();
   const { actions, mixer } = useAnimations(animations, group);
