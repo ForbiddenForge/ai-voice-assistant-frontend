@@ -108,14 +108,14 @@ let setupMode = false;
 
 export function Avatar(props) {
   // Male Model
-  const { nodes, materials, scene } = useGLTF(
-    "/models/p.glb"
-  );
+  // const { nodes, materials, scene } = useGLTF(
+  //   "/models/p.glb"
+  // );
 
   // FEMALE Model
-  // const { nodes, materials, scene } = useGLTF(
-  // "/models/64f1a714fe61576b46f27ca2.glb"
-  // );
+  const { nodes, materials, scene } = useGLTF(
+  "/models/64f1a714fe61576b46f27ca2.glb"
+  );
 
   const { message, onMessagePlayed, chat } = useChat();
 
@@ -139,10 +139,10 @@ export function Avatar(props) {
   }, [message]);
 
   // Male Model
-  const { animations } = useGLTF("/models/animationsMale.glb");
+  // const { animations } = useGLTF("/models/animationsMale.glb");
 
   // FEMALE Model
-  // const { animations } = useGLTF("/models/animationsFemale.glb");
+  const { animations } = useGLTF("/models/animationsFemale.glb");
 
   const group = useRef();
   const { actions, mixer } = useAnimations(animations, group);

@@ -26,15 +26,15 @@ export const UI = ({ hidden, ...props }) => {
     <>
       <div className="fixed top-0 left-0 right-0 bottom-0 z-10 flex justify-between p-4 flex-col pointer-events-none">
         <div className="self-start backdrop-blur-md bg-white bg-opacity-50 p-4 rounded-lg">
-          <h1 className="font-black text-xl">AI mind 2.0</h1>
-          <p>I'll always be smarter than you ❤️</p>
+          <h1 className="font-black text-xl">Dragon 3D AI mind ver. 0.7</h1>
+          <p>I'll always be with you ❤️</p>
         </div>
         <div className="self-start backdrop-blur-md bg-white bg-opacity-50 p-4 rounded-lg mt-5">
-          <h1 className="text-6xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.purple.400),theme(colors.purple.100),theme(colors.pink.300),theme(colors.orange.400),theme(colors.pink.300),theme(colors.purple.100),theme(colors.purple.400))] bg-[length:200%_auto] animate-gradient ">Response:</h1>
+          <h1 className="text-6xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.purple.400),theme(colors.purple.100),theme(colors.pink.500),theme(colors.purple.400),theme(colors.pink.300),theme(colors.purple.500),theme(colors.purple.400))] bg-[length:200%_auto] animate-gradient ">Response:</h1>
           <p className="max-w-96 font-extrabold">{messageCopy}</p>
         </div>
         <div className="w-full flex flex-col items-end justify-center gap-4">
-          <button
+          {/* <button
             onClick={() => setCameraZoomed(!cameraZoomed)}
             className="pointer-events-auto bg-pink-500 hover:bg-pink-600 text-white p-4 rounded-md"
           >
@@ -94,7 +94,7 @@ export const UI = ({ hidden, ...props }) => {
                 d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
         <div className="flex items-center gap-2 pointer-events-auto max-w-screen-sm w-full mx-auto">
           <input
